@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249519F222425182006E39B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249519F122425182006E39B8 /* Main.storyboard */; };
+		249519F522425194006E39B8 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249519F322425192006E39B8 /* CustomMessageCell.swift */; };
+		249519F622425194006E39B8 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249519F422425194006E39B8 /* MessageCell.xib */; };
+		24FA0199224B5CB400CC5FB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24FA0198224B5CB400CC5FB8 /* GoogleService-Info.plist */; };
+		24FA019B224B742600CC5FB8 /* R-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FA019A224B742600CC5FB8 /* R-icon.png */; };
+		24FA244522424A24004C5047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA244422424A24004C5047 /* AppDelegate.swift */; };
+		24FA244C22424A26004C5047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FA244B22424A26004C5047 /* Assets.xcassets */; };
+		24FA244F22424A26004C5047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FA244D22424A26004C5047 /* LaunchScreen.storyboard */; };
+		24FA245A22424A26004C5047 /* Flash_ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA245922424A26004C5047 /* Flash_ChatTests.swift */; };
+		24FA246522424A26004C5047 /* Flash_ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA246422424A26004C5047 /* Flash_ChatUITests.swift */; };
+		24FA247522424ABD004C5047 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA247422424ABD004C5047 /* Message.swift */; };
+		24FA247D22424B37004C5047 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA247922424B35004C5047 /* WelcomeViewController.swift */; };
+		24FA247E22424B37004C5047 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA247A22424B35004C5047 /* ChatViewController.swift */; };
+		24FA247F22424B37004C5047 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA247B22424B36004C5047 /* LogInViewController.swift */; };
+		24FA248022424B37004C5047 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA247C22424B37004C5047 /* RegisterViewController.swift */; };
+		C79524487371FEF8C5B63F8A /* Pods_Flash_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8E66B5D8CEF8CAF4792D26 /* Pods_Flash_Chat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24FA245622424A26004C5047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FA243922424A24004C5047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FA244022424A24004C5047;
+			remoteInfo = "Flash-Chat";
+		};
+		24FA246122424A26004C5047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FA243922424A24004C5047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FA244022424A24004C5047;
+			remoteInfo = "Flash-Chat";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		249519F122425182006E39B8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		249519F322425192006E39B8 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		249519F422425194006E39B8 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		24FA0198224B5CB400CC5FB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24FA019A224B742600CC5FB8 /* R-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "R-icon.png"; path = "Flash-Chat/Model/R-icon.png"; sourceTree = SOURCE_ROOT; };
+		24FA244122424A24004C5047 /* RChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FA244422424A24004C5047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24FA244B22424A26004C5047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24FA244E22424A26004C5047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24FA245022424A26004C5047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FA245522424A26004C5047 /* RChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FA245922424A26004C5047 /* Flash_ChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flash_ChatTests.swift; sourceTree = "<group>"; };
+		24FA245B22424A26004C5047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FA246022424A26004C5047 /* RChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FA246422424A26004C5047 /* Flash_ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flash_ChatUITests.swift; sourceTree = "<group>"; };
+		24FA246622424A26004C5047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FA247422424ABD004C5047 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		24FA247922424B35004C5047 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		24FA247A22424B35004C5047 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		24FA247B22424B36004C5047 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		24FA247C22424B37004C5047 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2E8E66B5D8CEF8CAF4792D26 /* Pods_Flash_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CDC7854499C52BE2765A29 /* Pods-Flash-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash-Chat.release.xcconfig"; path = "Target Support Files/Pods-Flash-Chat/Pods-Flash-Chat.release.xcconfig"; sourceTree = "<group>"; };
+		97FF8AB289D777F629636481 /* Pods-Flash-Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash-Chat.debug.xcconfig"; path = "Target Support Files/Pods-Flash-Chat/Pods-Flash-Chat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FA243E22424A24004C5047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79524487371FEF8C5B63F8A /* Pods_Flash_Chat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FA245222424A26004C5047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FA245D22424A26004C5047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24FA243822424A24004C5047 = {
+			isa = PBXGroup;
+			children = (
+				24FA244322424A24004C5047 /* Flash-Chat */,
+				24FA245822424A26004C5047 /* Flash-ChatTests */,
+				24FA246322424A26004C5047 /* Flash-ChatUITests */,
+				24FA244222424A24004C5047 /* Products */,
+				687F7F6BE798CE5015886F3F /* Pods */,
+				379FE3060D38B3A99239E526 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24FA244222424A24004C5047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24FA244122424A24004C5047 /* RChat.app */,
+				24FA245522424A26004C5047 /* RChatTests.xctest */,
+				24FA246022424A26004C5047 /* RChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24FA244322424A24004C5047 /* Flash-Chat */ = {
+			isa = PBXGroup;
+			children = (
+				24FA247822424B24004C5047 /* Controller */,
+				24FA247322424A97004C5047 /* View */,
+				24FA247222424A8E004C5047 /* Model */,
+				24FA244B22424A26004C5047 /* Assets.xcassets */,
+				24FA244D22424A26004C5047 /* LaunchScreen.storyboard */,
+				24FA245022424A26004C5047 /* Info.plist */,
+				24FA0198224B5CB400CC5FB8 /* GoogleService-Info.plist */,
+			);
+			path = "Flash-Chat";
+			sourceTree = "<group>";
+		};
+		24FA245822424A26004C5047 /* Flash-ChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				24FA245922424A26004C5047 /* Flash_ChatTests.swift */,
+				24FA245B22424A26004C5047 /* Info.plist */,
+			);
+			path = "Flash-ChatTests";
+			sourceTree = "<group>";
+		};
+		24FA246322424A26004C5047 /* Flash-ChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24FA246422424A26004C5047 /* Flash_ChatUITests.swift */,
+				24FA246622424A26004C5047 /* Info.plist */,
+			);
+			path = "Flash-ChatUITests";
+			sourceTree = "<group>";
+		};
+		24FA247222424A8E004C5047 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24FA247422424ABD004C5047 /* Message.swift */,
+				24FA019A224B742600CC5FB8 /* R-icon.png */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24FA247322424A97004C5047 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				249519F122425182006E39B8 /* Main.storyboard */,
+				24FA248122424B7E004C5047 /* Custom Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24FA247822424B24004C5047 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24FA244422424A24004C5047 /* AppDelegate.swift */,
+				24FA247922424B35004C5047 /* WelcomeViewController.swift */,
+				24FA247B22424B36004C5047 /* LogInViewController.swift */,
+				24FA247C22424B37004C5047 /* RegisterViewController.swift */,
+				24FA247A22424B35004C5047 /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24FA248122424B7E004C5047 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				249519F322425192006E39B8 /* CustomMessageCell.swift */,
+				249519F422425194006E39B8 /* MessageCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		379FE3060D38B3A99239E526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E8E66B5D8CEF8CAF4792D26 /* Pods_Flash_Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		687F7F6BE798CE5015886F3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97FF8AB289D777F629636481 /* Pods-Flash-Chat.debug.xcconfig */,
+				64CDC7854499C52BE2765A29 /* Pods-Flash-Chat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24FA244022424A24004C5047 /* RChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FA246922424A26004C5047 /* Build configuration list for PBXNativeTarget "RChat" */;
+			buildPhases = (
+				6F74DC604FE0029AD7AFF106 /* [CP] Check Pods Manifest.lock */,
+				24FA243D22424A24004C5047 /* Sources */,
+				24FA243E22424A24004C5047 /* Frameworks */,
+				24FA243F22424A24004C5047 /* Resources */,
+				BE8FC2E9CB990CFBFB502B75 /* [CP] Embed Pods Frameworks */,
+				3B125BC54A77E172AEAF9C8A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RChat;
+			productName = "Flash-Chat";
+			productReference = 24FA244122424A24004C5047 /* RChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24FA245422424A26004C5047 /* RChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FA246C22424A26004C5047 /* Build configuration list for PBXNativeTarget "RChatTests" */;
+			buildPhases = (
+				24FA245122424A26004C5047 /* Sources */,
+				24FA245222424A26004C5047 /* Frameworks */,
+				24FA245322424A26004C5047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FA245722424A26004C5047 /* PBXTargetDependency */,
+			);
+			name = RChatTests;
+			productName = "Flash-ChatTests";
+			productReference = 24FA245522424A26004C5047 /* RChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24FA245F22424A26004C5047 /* RChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FA246F22424A26004C5047 /* Build configuration list for PBXNativeTarget "RChatUITests" */;
+			buildPhases = (
+				24FA245C22424A26004C5047 /* Sources */,
+				24FA245D22424A26004C5047 /* Frameworks */,
+				24FA245E22424A26004C5047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FA246222424A26004C5047 /* PBXTargetDependency */,
+			);
+			name = RChatUITests;
+			productName = "Flash-ChatUITests";
+			productReference = 24FA246022424A26004C5047 /* RChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24FA243922424A24004C5047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Роман К";
+				TargetAttributes = {
+					24FA244022424A24004C5047 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					24FA245422424A26004C5047 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 24FA244022424A24004C5047;
+					};
+					24FA245F22424A26004C5047 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 24FA244022424A24004C5047;
+					};
+				};
+			};
+			buildConfigurationList = 24FA243C22424A24004C5047 /* Build configuration list for PBXProject "RChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24FA243822424A24004C5047;
+			productRefGroup = 24FA244222424A24004C5047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24FA244022424A24004C5047 /* RChat */,
+				24FA245422424A26004C5047 /* RChatTests */,
+				24FA245F22424A26004C5047 /* RChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24FA243F22424A24004C5047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FA244F22424A26004C5047 /* LaunchScreen.storyboard in Resources */,
+				24FA019B224B742600CC5FB8 /* R-icon.png in Resources */,
+				249519F622425194006E39B8 /* MessageCell.xib in Resources */,
+				24FA0199224B5CB400CC5FB8 /* GoogleService-Info.plist in Resources */,
+				24FA244C22424A26004C5047 /* Assets.xcassets in Resources */,
+				249519F222425182006E39B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FA245322424A26004C5047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FA245E22424A26004C5047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B125BC54A77E172AEAF9C8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flash-Chat/Pods-Flash-Chat-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flash-Chat/Pods-Flash-Chat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F74DC604FE0029AD7AFF106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flash-Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8FC2E9CB990CFBFB502B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flash-Chat/Pods-Flash-Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flash-Chat/Pods-Flash-Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24FA243D22424A24004C5047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249519F522425194006E39B8 /* CustomMessageCell.swift in Sources */,
+				24FA247522424ABD004C5047 /* Message.swift in Sources */,
+				24FA247D22424B37004C5047 /* WelcomeViewController.swift in Sources */,
+				24FA248022424B37004C5047 /* RegisterViewController.swift in Sources */,
+				24FA247F22424B37004C5047 /* LogInViewController.swift in Sources */,
+				24FA247E22424B37004C5047 /* ChatViewController.swift in Sources */,
+				24FA244522424A24004C5047 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FA245122424A26004C5047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FA245A22424A26004C5047 /* Flash_ChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FA245C22424A26004C5047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FA246522424A26004C5047 /* Flash_ChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24FA245722424A26004C5047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FA244022424A24004C5047 /* RChat */;
+			targetProxy = 24FA245622424A26004C5047 /* PBXContainerItemProxy */;
+		};
+		24FA246222424A26004C5047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FA244022424A24004C5047 /* RChat */;
+			targetProxy = 24FA246122424A26004C5047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24FA244D22424A26004C5047 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24FA244E22424A26004C5047 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24FA246722424A26004C5047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24FA246822424A26004C5047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24FA246A22424A26004C5047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97FF8AB289D777F629636481 /* Pods-Flash-Chat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR9PYNC6BQ;
+				INFOPLIST_FILE = "Flash-Chat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecherno.Flash-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24FA246B22424A26004C5047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64CDC7854499C52BE2765A29 /* Pods-Flash-Chat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR9PYNC6BQ;
+				INFOPLIST_FILE = "Flash-Chat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecherno.Flash-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24FA246D22424A26004C5047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR9PYNC6BQ;
+				INFOPLIST_FILE = "Flash-ChatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecherno.Flash-ChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RChat.app/RChat";
+			};
+			name = Debug;
+		};
+		24FA246E22424A26004C5047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR9PYNC6BQ;
+				INFOPLIST_FILE = "Flash-ChatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecherno.Flash-ChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RChat.app/RChat";
+			};
+			name = Release;
+		};
+		24FA247022424A26004C5047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR9PYNC6BQ;
+				INFOPLIST_FILE = "Flash-ChatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecherno.Flash-ChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Flash-Chat";
+			};
+			name = Debug;
+		};
+		24FA247122424A26004C5047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR9PYNC6BQ;
+				INFOPLIST_FILE = "Flash-ChatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecherno.Flash-ChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Flash-Chat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24FA243C22424A24004C5047 /* Build configuration list for PBXProject "RChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FA246722424A26004C5047 /* Debug */,
+				24FA246822424A26004C5047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FA246922424A26004C5047 /* Build configuration list for PBXNativeTarget "RChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FA246A22424A26004C5047 /* Debug */,
+				24FA246B22424A26004C5047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FA246C22424A26004C5047 /* Build configuration list for PBXNativeTarget "RChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FA246D22424A26004C5047 /* Debug */,
+				24FA246E22424A26004C5047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FA246F22424A26004C5047 /* Build configuration list for PBXNativeTarget "RChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FA247022424A26004C5047 /* Debug */,
+				24FA247122424A26004C5047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24FA243922424A24004C5047 /* Project object */;
+}
